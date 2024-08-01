@@ -265,7 +265,7 @@ class AboutScreen extends StatelessWidget {
                 color: context.t.dividerColor,
               ),
               () {
-                launch('https://github.com/marchellodev/sharik');
+                launch('https://github.com/codesagepath/sharik');
               },
               TransparentButtonBackground.def,
             ),
@@ -328,7 +328,7 @@ class AboutScreen extends StatelessWidget {
               markdown: file,
               name: context.l.aboutTrackingPolicy,
               url:
-                  'https://github.com/marchellodev/sharik/blob/master/tracking_policy.md',
+                  'https://github.com/codesagepath/sharik/blob/master/tracking_policy.md',
             ),
           );
         }),
@@ -351,7 +351,7 @@ class AboutScreen extends StatelessWidget {
               markdown: file,
               name: context.l.aboutPrivacyPolicy,
               url:
-                  'https://github.com/marchellodev/sharik/blob/master/privacy_policy.md',
+                  'https://github.com/codesagepath/sharik/blob/master/privacy_policy.md',
             ),
           );
         }),

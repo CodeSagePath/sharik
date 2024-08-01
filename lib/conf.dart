@@ -53,11 +53,11 @@ enum Sources {
 String source2url(Sources source) {
   switch (source) {
     case Sources.gitHub:
-      return 'https://github.com/marchellodev/sharik';
+      return 'https://github.com/codesagepath/sharik';
     case Sources.githubRelease:
-      return 'https://github.com/marchellodev/sharik/releases';
+      return 'https://github.com/codesagepath/sharik/releases';
     case Sources.playStore:
-      return 'https://play.google.com/store/apps/details?id=dev.marchello.sharik';
+      return 'https://play.google.com/store/apps/details?id=dev.codesagepath.sharik';
     case Sources.snap:
       return 'https://snapcraft.io/sharik-app';
     case Sources.windowsStore:

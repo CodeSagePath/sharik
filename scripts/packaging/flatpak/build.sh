@@ -6,5 +6,5 @@
 
 rm -rf build-dir/
 
-flatpak-builder --user --install build-dir dev.marchello.Sharik.yml
-flatpak run dev.marchello.Sharik
+flatpak-builder --user --install build-dir dev.codesagepath.sharik.yml
+flatpak run dev.codesagepath.sharik

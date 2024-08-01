@@ -54,7 +54,7 @@ Sharik รองรับแพลตฟอร์มเหล่านี้:
 - Windows
 
 
-โฮมเพจบน GitHub: https://github.com/marchellodev/sharik
+โฮมเพจบน GitHub: https://github.com/codesagepath/sharik
 
 
 ดาวน์โหลด Sharik เลย!

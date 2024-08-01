@@ -54,7 +54,7 @@ SHARIK支持下列平台：
 - Windows
 
 
-GitHub page: https://github.com/marchellodev/sharik
+GitHub page: https://github.com/codesagepath/sharik
 
 
 立即下载Sharik！

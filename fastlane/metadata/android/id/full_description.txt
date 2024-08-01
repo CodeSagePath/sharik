@@ -53,7 +53,7 @@ SHARIK JUGA TERSEDIA UNTUK:
 - sk - slovak (Slovenčina)
 
 
-Halaman GitHub: https://github.com/marchellodev/sharik
+Halaman GitHub: https://github.com/codesagepath/sharik
 
 
 Unduh Sharik sekarang!

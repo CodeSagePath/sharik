@@ -52,14 +52,14 @@ class PickNetworkDialog extends StatelessWidget {
                       child: Text(
                         el.name,
                         style: GoogleFonts.getFont('Andika',
-                            color: context.t.textTheme.bodyText1!.color,),
+                            color: context.t.textTheme.bodyLarge!.color,),
                       ),),
                   subtitle: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Text(
                       el.addresses.first.address,
                       style: GoogleFonts.getFont('Andika',
-                          color: context.t.textTheme.caption!.color,),
+                          color: context.t.textTheme.bodySmall!.color,),
                     ),
                   ),
                   onTap: () {

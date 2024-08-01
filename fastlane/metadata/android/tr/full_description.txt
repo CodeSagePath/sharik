@@ -55,7 +55,7 @@ SHARIK ŞU PLATFORMLARDA MEVCUT:
 - Windows
 
 
-GitHub sayfası: https://github.com/marchellodev/sharik
+GitHub sayfası: https://github.com/codesagepath/sharik
 
 
 Sharik'i hemen indirin!

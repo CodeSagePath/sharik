@@ -54,7 +54,7 @@ SHARIKは以下に示すプラットフォームでご利用いただけます:
 - Windows
 
 
-GitHub ページ: https://github.com/marchellodev/sharik
+GitHub ページ: https://github.com/codesagepath/sharik
 
 
 今すぐSharikをダウンロードお願いします！

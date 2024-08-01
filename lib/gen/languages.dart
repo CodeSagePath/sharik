@@ -22,7 +22,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations_sk.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations_ta.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations_te.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations_th.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_to.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations_to.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations_tr.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations_uk.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations_ur.dart';

@@ -107,7 +107,7 @@ def _fetch_github_contributors():
     # fetch all github contributors
     contributors = []
     # todo pagination
-    api = "https://api.github.com/repos/marchellodev/sharik/contributors?per_page=100"
+    api = "https://api.github.com/repos/codesagepath/sharik/contributors?per_page=100"
     response = urlopen(api)
     data = response.read()
     data = data.decode('utf-8')

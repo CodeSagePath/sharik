@@ -6,7 +6,7 @@ import '../../conf.dart';
 class UpdateService extends ChangeNotifier {
   // todo set in the config file
   static const String url =
-      'https://raw.githubusercontent.com/marchellodev/sharik/master/CHANGELOG.md';
+      'https://raw.githubusercontent.com/codesagepath/sharik/master/CHANGELOG.md';
 
   String? markdown;
   String? latestVersion;

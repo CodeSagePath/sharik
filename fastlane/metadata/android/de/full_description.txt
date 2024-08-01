@@ -54,7 +54,7 @@ SHARIK IST VERFÜGBAR:
 - Windows
 
 
-GitHub-Seite: https://github.com/marchellodev/sharik
+GitHub-Seite: https://github.com/codesagepath/sharik
 
 
 Sharik jetzt herunterladen!

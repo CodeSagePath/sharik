@@ -42,7 +42,7 @@ class ChangelogDialog extends StatelessWidget {
       actions: [
         DialogTextButton(context.l.generalOpenInGithub, () {
           launch(
-            'https://github.com/marchellodev/sharik/blob/master/CHANGELOG.md',
+            'https://github.com/codesagepath/sharik/blob/master/CHANGELOG.md',
           );
         }),
         DialogTextButton(context.l.generalClose, () {

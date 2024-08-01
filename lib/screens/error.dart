@@ -28,7 +28,7 @@ class _ErrorScreenState extends State<ErrorScreen> {
             padding: const EdgeInsets.all(12),
             // todo translate
             child: Text(
-              'Unfortunately, an error has occurred.\n\nError information was copied to the clipboard, please file an issue on GitHub:\nhttps://github.com/marchellodev/sharik\n\n\nRestarting or reinstalling the app might help solve the problem.\n\nThanks for using Sharik! :>',
+              'Unfortunately, an error has occurred.\n\nError information was copied to the clipboard, please file an issue on GitHub:\nhttps://github.com/codesagepath/sharik\n\n\nRestarting or reinstalling the app might help solve the problem.\n\nThanks for using Sharik! :>',
               textAlign: TextAlign.center,
               style: GoogleFonts.jetBrainsMono(
                   fontSize: 14, color: Colors.grey.shade300),

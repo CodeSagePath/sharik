@@ -1,4 +1,4 @@
-package dev.marchello.sharik
+package dev.codesagepath.sharik
 
 import android.os.Bundle
 import io.flutter.embedding.android.FlutterActivity

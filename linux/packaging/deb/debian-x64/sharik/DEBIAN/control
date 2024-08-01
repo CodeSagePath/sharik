@@ -1,8 +1,8 @@
 Section: x11
 Priority: optional
-Maintainer: Mark Motliuk <marchellodev@gmail.com>
+Maintainer: Mark Motliuk <codesagepath@gmail.com>
 Version: 3.0
-Homepage: https://github.com/marchellodev/sharik
+Homepage: https://github.com/codesagepath/sharik
 Package: sharik
 Architecture: amd64
 Description: Sharik is an open-source, cross-platform solution for sharing files via Wi-Fi or Mobile Hotspot

@@ -1,9 +1,9 @@
 # ![App logo](media/banner.png)
-[![License badge](https://img.shields.io/github/license/marchellodev/sharik)](https://github.com/marchellodev/sharik/blob/master/LICENSE)
-[![Version badge](https://img.shields.io/github/v/release/marchellodev/sharik)](https://github.com/marchellodev/sharik/releases)
+[![License badge](https://img.shields.io/github/license/codesagepath/sharik)](https://github.com/codesagepath/sharik/blob/master/LICENSE)
+[![Version badge](https://img.shields.io/github/v/release/codesagepath/sharik)](https://github.com/codesagepath/sharik/releases)
 [![sharik-app](https://snapcraft.io/sharik-app/badge.svg)](https://snapcraft.io/sharik-app)
-[![f-droid](https://img.shields.io/f-droid/v/dev.marchello.sharik)](https://f-droid.org/en/packages/dev.marchello.sharik)
-[![Downloads badge](https://img.shields.io/github/downloads/marchellodev/sharik/total)](https://github.com/marchellodev/sharik/releases)
+[![f-droid](https://img.shields.io/f-droid/v/dev.codesagepath.sharik)](https://f-droid.org/en/packages/dev.codesagepath.sharik)
+[![Downloads badge](https://img.shields.io/github/downloads/codesagepath/sharik/total)](https://github.com/codesagepath/sharik/releases)
 [![Download sharik](https://img.shields.io/sourceforge/dt/sharik.svg)](https://sourceforge.net/projects/sharik/files/latest/download)
 
 ![Android](https://img.shields.io/badge/OS-Android-informational?logo=Android)
@@ -41,16 +41,16 @@ Sharik is so unique, thanks to our outstanding contributors! Everyone is welcome
 
 
 ### Android
-<a href='https://f-droid.org/en/packages/dev.marchello.sharik'><img alt='Get it on F-Droid' src='https://gitlab.com/fdroid/artwork/-/raw/master/badge/get-it-on-en-us.png' width="200"/></a>
+<a href='https://f-droid.org/en/packages/dev.codesagepath.sharik'><img alt='Get it on F-Droid' src='https://gitlab.com/fdroid/artwork/-/raw/master/badge/get-it-on-en-us.png' width="200"/></a>
 <a href='https://play.google.com/store/apps/details?id=dev.monora.sharik'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="200"/></a>
 
 Thanks to [Trebleshot Developers](https://github.com/trebleshot) for hosting the app in the Play Store! (The Play Store version has a different package name since my account got permanently banned)
 
 OR direct download:
-- [For all architectures](https://github.com/marchellodev/sharik/releases/download/v3.1/sharik_v3.1_android.apk)
-- [arm64-v8a](https://github.com/marchellodev/sharik/releases/download/v3.1/sharik_v3.1_android_arm64_v8a.apk)
-- [armeabi-v7a](https://github.com/marchellodev/sharik/releases/download/v3.1/sharik_v3.1_android_armeabi_v7a.apk)
-- [x86_64](https://github.com/marchellodev/sharik/releases/download/v3.1/sharik_v3.1_android_x86_64.apk)
+- [For all architectures](https://github.com/codesagepath/sharik/releases/download/v3.1/sharik_v3.1_android.apk)
+- [arm64-v8a](https://github.com/codesagepath/sharik/releases/download/v3.1/sharik_v3.1_android_arm64_v8a.apk)
+- [armeabi-v7a](https://github.com/codesagepath/sharik/releases/download/v3.1/sharik_v3.1_android_armeabi_v7a.apk)
+- [x86_64](https://github.com/codesagepath/sharik/releases/download/v3.1/sharik_v3.1_android_x86_64.apk)
 
 
 ### Windows
@@ -59,8 +59,8 @@ OR direct download:
 
 The Windows application is not signed; you may get a 'suspicious application' alert or something like that. Sorry for that.
 
-- [Installation file (recommended)](https://github.com/marchellodev/sharik/releases/download/v3.1/sharik_v3.1_windows.msi)
-- [zip (portable)](https://github.com/marchellodev/sharik/releases/download/v3.1/sharik_v3.1_windows.zip)
+- [Installation file (recommended)](https://github.com/codesagepath/sharik/releases/download/v3.1/sharik_v3.1_windows.msi)
+- [zip (portable)](https://github.com/codesagepath/sharik/releases/download/v3.1/sharik_v3.1_windows.zip)
 
 You can also get Sharik via [Scoop](https://scoop.sh/):
 
@@ -89,9 +89,9 @@ sudo apt-get update && sudo apt-get install sharik
 ```
 
 OR direct download:
-- [AppImage (recommended)](https://github.com/marchellodev/sharik/releases/download/v3.1/sharik_v3.1_linux.AppImage)
-- [DEB (for Debian-based systems)](https://github.com/marchellodev/sharik/releases/download/v3.1/sharik_v3.1_linux.deb)
-- [zip](https://github.com/marchellodev/sharik/releases/download/v3.1/sharik_v3.1_linux.zip)
+- [AppImage (recommended)](https://github.com/codesagepath/sharik/releases/download/v3.1/sharik_v3.1_linux.AppImage)
+- [DEB (for Debian-based systems)](https://github.com/codesagepath/sharik/releases/download/v3.1/sharik_v3.1_linux.deb)
+- [zip](https://github.com/codesagepath/sharik/releases/download/v3.1/sharik_v3.1_linux.zip)
 
 
 ### MacOS

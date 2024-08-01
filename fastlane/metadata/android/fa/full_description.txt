@@ -54,7 +54,7 @@
 - Windows
 
 
-آدرس صفحه گیت هاب: https://github.com/marchellodev/sharik
+آدرس صفحه گیت هاب: https://github.com/codesagepath/sharik
 
 
 همین الان شریک را دانلود کنید!

@@ -54,7 +54,7 @@
 - Windows
 
 
-గిట్‌హబ్ పేజి: https://github.com/marchellodev/sharik
+గిట్‌హబ్ పేజి: https://github.com/codesagepath/sharik
 
 
 ఇప్పుడే షేరిక్‌ని డౌన్‌లోడ్ చేయండి!

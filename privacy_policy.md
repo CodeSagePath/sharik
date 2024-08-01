@@ -1,6 +1,6 @@
 **Privacy Policy**
 
-Mark Motliuk (marchellodev) built the Sharik app as a Free and Open-Source app. This SERVICE is provided by marchellodev at no cost and is intended for use as is.
+Mark Motliuk (codesagepath) built the Sharik app as a Free and Open-Source app. This SERVICE is provided by codesagepath at no cost and is intended for use as is.
 
 This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
 
@@ -55,4 +55,4 @@ This policy is effective as of 2021-06-16
 
 **Contact Us**
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at marchellodev@gmail.com.
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at codesagepath@gmail.com.

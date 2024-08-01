@@ -1,4 +1,4 @@
-app-id: dev.marchello.Sharik
+app-id: dev.codesagepath.sharik
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
@@ -21,10 +21,10 @@ modules:
       - ls sharik
       - cp -r sharik /app/sharik
       - chmod +x /app/sharik/sharik
-      - install -Dm644 sharik.png /app/share/icons/hicolor/128x128/apps/dev.marchello.Sharik.png
+      - install -Dm644 sharik.png /app/share/icons/hicolor/128x128/apps/dev.codesagepath.sharik.png
       - mkdir /app/bin
       - ln -s /app/sharik/sharik /app/bin/sharik
-      - install -Dm644 dev.marchello.Sharik.desktop /app/share/applications/dev.marchello.Sharik.desktop
+      - install -Dm644 dev.codesagepath.sharik.desktop /app/share/applications/dev.codesagepath.sharik.desktop
     sources:
       - type: dir
         path: sharik
@@ -32,4 +32,4 @@ modules:
       - type: file
         path: sharik.png
       - type: file
-        path: dev.marchello.Sharik.desktop
+        path: dev.codesagepath.sharik.desktop

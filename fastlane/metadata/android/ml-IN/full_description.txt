@@ -51,7 +51,7 @@ Sharik താഴെപ്പറയുന്ന പ്ലാറ്റ്‌ഫോ
 - Windows
 
 
-ജിറ്റ്ഹബ്ബ് പേജ്: https://github.com/marchellodev/sharik
+ജിറ്റ്ഹബ്ബ് പേജ്: https://github.com/codesagepath/sharik
 
 
 ഇപ്പോൾ തന്നെ Sharik ഡൗൺലോഡ് ചെയ്യുക!

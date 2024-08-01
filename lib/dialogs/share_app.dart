@@ -148,7 +148,7 @@ class _ShareAppDialogState extends State<ShareAppDialog> {
                           fontWeight: selected.contains(app)
                               ? FontWeight.w500
                               : FontWeight.normal,
-                          color: context.t.textTheme.bodyText1!.color,
+                          color: context.t.textTheme.bodyLarge!.color,
                         ),
                       ),
                     ),
@@ -158,7 +158,7 @@ class _ShareAppDialogState extends State<ShareAppDialog> {
                         app.packageName,
                         style: GoogleFonts.getFont(
                           'Andika',
-                          color: context.t.textTheme.bodyText1!.color,
+                          color: context.t.textTheme.bodyLarge!.color,
                         ),
                       ),
                     ),

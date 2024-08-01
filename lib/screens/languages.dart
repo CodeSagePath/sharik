@@ -20,8 +20,9 @@ class LanguagePickerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return RepaintBoundary(
       key: _globalKey,
-      child: WillPopScope(
-        onWillPop: () async {
+      child: PopScope(
+        canPop: false,
+        onPopInvoked: (didPop) {
           final set = context.read<LanguageManager>().isLanguageSet;
           if (set) {
             SharikRouter.navigateTo(
@@ -29,11 +30,7 @@ class LanguagePickerScreen extends StatelessWidget {
               Screens.home,
               RouteDirection.right,
             );
-
-            return false;
           }
-
-          return true;
         },
         child: Scaffold(
           body: ListView(

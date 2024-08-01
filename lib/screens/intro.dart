@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intro_slider/intro_slider.dart';
-import 'package:intro_slider/slide_object.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../components/page_router.dart';
@@ -18,19 +17,21 @@ class IntroScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return RepaintBoundary(
       key: _globalKey,
-      child: WillPopScope(
-        onWillPop: () async {
+      child: PopScope(
+        canPop: false,
+        onPopInvoked: (didPop) {
           SharikRouter.navigateTo(
             _globalKey,
             Screens.home,
             RouteDirection.right,
           );
 
-          return false;
         },
         child: Scaffold(
           body: IntroSlider(
-            isScrollable: true,
+            scrollable: true,
+            // isScrollable: true,
+            // backgroundColorAllTabs: Colors.white70,
             colorDot: Colors.white70,
             colorActiveDot: Colors.white,
             // todo check border radius compared to the bottom bar
@@ -67,6 +68,7 @@ class IntroScreen extends StatelessWidget {
               Screens.home,
               RouteDirection.right,
             ),
+
             slides: [
               Slide(
                 styleTitle: GoogleFonts.getFont(
@@ -132,9 +134,9 @@ class IntroScreen extends StatelessWidget {
                 widgetDescription: GestureDetector(
                   onTap: () async {
                     if (await canLaunch(
-                      'https://github.com/marchellodev/sharik',
+                      'https://github.com/codesagepath/sharik',
                     )) {
-                      await launch('https://github.com/marchellodev/sharik');
+                      await launch('https://github.com/codesagepath/sharik');
                     }
                   },
                   child: Text(

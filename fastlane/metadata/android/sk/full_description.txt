@@ -54,7 +54,7 @@ Sharik je dostupný pre:
 - Windows
 
 
-GitHub stránka: https://github.com/marchellodev/sharik
+GitHub stránka: https://github.com/codesagepath/sharik
 
 
 Stiahnite si Sharik hneď teraz!
