@@ -1,26 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_ar.dart';
-// import 'package:flutter_gen/gen_l10n/app_localizations_br.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_de.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_en.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_es.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_fa.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_fr.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_id.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_it.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_ja.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_ml.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_pl.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_pt.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_ru.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_sk.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_te.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_th.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_tr.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_uk.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations_zh.dart';
 
-import 'logic/language.dart';
 import 'logic/sharing_object.dart';
 import 'screens/about.dart';
 import 'screens/error.dart';
@@ -194,7 +173,7 @@ String source2url(Sources source) {
 /*         locale: const Locale('th'), */
 /*         localizations: AppLocalizationsTh(), */
 /*       ), */
-/**/
+/// /
 /*       // Language( */
 /*       //     // 60 million (56+4) */
 /*       //     name: 'gujarati', */

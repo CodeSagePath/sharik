@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import 'conf.dart';
+import './l10n/app_localizations.dart';
 import 'gen/languages.dart';
 import 'logic/language.dart';
 import 'logic/theme.dart';
@@ -46,13 +45,13 @@ class SharikApp extends StatelessWidget {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: context.watch<ThemeManager>().brightness == Brightness.dark
           ? SystemUiOverlayStyle.light.copyWith(
-              statusBarColor: Colors.grey.shade900.withOpacity(0.4),
+              statusBarColor: const Color.fromRGBO(33, 33, 33, 0.4),
               systemNavigationBarColor: Colors.deepPurple.shade100,
               // systemNavigationBarDividerColor: Colors.deepPurple.shade100,
               systemNavigationBarIconBrightness: Brightness.dark,
             )
           : SystemUiOverlayStyle.dark.copyWith(
-              statusBarColor: Colors.grey.shade100.withOpacity(0.6),
+              statusBarColor: const Color.fromRGBO(245, 245, 245, 0.6),
               systemNavigationBarColor: Colors.deepPurple.shade100,
               // systemNavigationBarDividerColor: Colors.deepPurple.shade100,
               systemNavigationBarIconBrightness: Brightness.dark,
@@ -61,35 +60,9 @@ class SharikApp extends StatelessWidget {
         navigatorKey: navigatorKey,
         debugShowCheckedModeBanner: false,
         builder: (context, child) {
-          return ResponsiveWrapper.builder(
-            ScrollConfiguration(
-              behavior: BouncingScrollBehavior(),
-              child: child!,
-            ),
-            minWidth: 400,
-            defaultScale: true,
-            breakpoints: [
-              const ResponsiveBreakpoint.resize(400, name: MOBILE),
-              const ResponsiveBreakpoint.autoScale(680, name: TABLET),
-              const ResponsiveBreakpoint.autoScale(
-                1100,
-                name: DESKTOP,
-                scaleFactor: 1.2,
-              ),
-            ],
-            breakpointsLandscape: [
-              const ResponsiveBreakpoint.autoScaleDown(
-                400,
-                name: MOBILE,
-                scaleFactor: 0.7,
-              ),
-              const ResponsiveBreakpoint.autoScale(
-                680,
-                name: TABLET,
-                scaleFactor: 0.7,
-              ),
-              // const ResponsiveBreakpoint.autoScale(1100, name: DESKTOP, scaleFactor: 0.5),
-            ],
+          return ScrollConfiguration(
+            behavior: BouncingScrollBehavior(),
+            child: child!,
           );
         },
         // builder: DevicePreview.appBuilder, //
@@ -105,42 +78,45 @@ class SharikApp extends StatelessWidget {
         theme: ThemeData(
           splashFactory: MaterialInkSplash.splashFactory,
           brightness: Brightness.light,
-          inputDecorationTheme: InputDecorationTheme(
+          inputDecorationTheme: const InputDecorationTheme(
             focusedBorder: UnderlineInputBorder(
               borderSide: BorderSide(
-                color: Colors.grey.shade900.withOpacity(0.8),
+                color: Color.fromRGBO(33, 33, 33, 0.8),
                 width: 2,
               ),
             ),
           ),
           textSelectionTheme: TextSelectionThemeData(
             cursorColor: Colors.grey.shade600,
-            selectionHandleColor: Colors.grey.shade200.withOpacity(0.9),
-            selectionColor: Colors.deepPurple.shade100.withOpacity(0.6),
+            selectionHandleColor: const Color.fromRGBO(238, 238, 238, 0.9),
+            selectionColor: const Color.fromRGBO(237, 231, 246, 0.6),
           ),
 
           // sharik top icon color
-          accentColor: Colors.deepPurple.shade500,
+          colorScheme: ColorScheme.light(
+            primary: Colors.deepPurple.shade500,
+            secondary: Colors.deepPurple.shade500,
+          ),
 
           // primarySwatch: Colors.deepPurple,
 
           // right click selection color
-          cardColor: Colors.grey.shade200.withOpacity(0.9),
+          cardColor: const Color.fromRGBO(238, 238, 238, 0.9),
 
           // color of the button on the default background
           dividerColor: Colors.deepPurple.shade400,
 
           // about card color
-          buttonColor: Colors.deepPurple.shade50.withOpacity(0.6),
+          // buttonColor: Colors.deepPurple.shade50.withOpacity(0.6),
         ),
         darkTheme: ThemeData(
           splashFactory: MaterialInkSplash.splashFactory,
 
           brightness: Brightness.dark,
-          inputDecorationTheme: InputDecorationTheme(
+          inputDecorationTheme: const InputDecorationTheme(
             focusedBorder: UnderlineInputBorder(
               borderSide: BorderSide(
-                color: Colors.deepPurple.shade50.withOpacity(0.8),
+                color: Color.fromRGBO(251, 250, 255, 0.8),
                 width: 2,
               ),
             ),
@@ -150,21 +126,24 @@ class SharikApp extends StatelessWidget {
 
           textSelectionTheme: TextSelectionThemeData(
             cursorColor: Colors.deepPurple.shade50,
-            selectionHandleColor: Colors.deepPurple.shade300.withOpacity(0.9),
-            selectionColor: Colors.deepPurple.shade50.withOpacity(0.4),
+            selectionHandleColor: const Color.fromRGBO(196, 181, 253, 0.9),
+            selectionColor: const Color.fromRGBO(251, 250, 255, 0.4),
           ),
 
           // sharik top icon color
-          accentColor: Colors.deepPurple.shade300,
+          colorScheme: ColorScheme.dark(
+            primary: Colors.deepPurple.shade300,
+            secondary: Colors.deepPurple.shade300,
+          ),
 
           // right click selection color
-          cardColor: Colors.deepPurple.shade400.withOpacity(0.9),
+          cardColor: const Color.fromRGBO(147, 51, 234, 0.9),
 
           // color of the button on the default background
           dividerColor: Colors.deepPurple.shade50,
 
           // about card color
-          buttonColor: Colors.deepPurple.shade100.withOpacity(0.8),
+          // buttonColor: Colors.deepPurple.shade50.withOpacity(0.6),
         ),
         themeMode: context.watch<ThemeManager>().theme,
         home: LoadingScreen(),
