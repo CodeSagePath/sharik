@@ -132,7 +132,6 @@ Future<String> processSingle(String svg) async {
 
     merges++;
     // print(colors.map((e) => e.color).toSet().length);
-
   }
 
   print(merges);
