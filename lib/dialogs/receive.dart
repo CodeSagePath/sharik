@@ -72,8 +72,12 @@ class _ReceiverDialogState extends State<ReceiverDialog> {
                             width: 42,
                             child: CircularProgressIndicator(
                               valueColor: AlwaysStoppedAnimation(
-                                context.t.colorScheme.secondary
-                                    .withOpacity(0.8),
+                                Color.fromRGBO(
+                                  context.t.colorScheme.secondary.red,
+                                  context.t.colorScheme.secondary.green,
+                                  context.t.colorScheme.secondary.blue,
+                                  0.8,
+                                ),
                               ),
                             ),
                           ),
@@ -86,7 +90,7 @@ class _ReceiverDialogState extends State<ReceiverDialog> {
                               fontSize: 13,
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -99,16 +103,24 @@ class _ReceiverDialogState extends State<ReceiverDialog> {
                         height: receiverService.receivers.length * 60,
                         child: Theme(
                           data: context.t.copyWith(
-                            splashColor:
-                                context.t.dividerColor.withOpacity(0.08),
+                            splashColor: Color.fromRGBO(
+                              context.t.dividerColor.red,
+                              context.t.dividerColor.green,
+                              context.t.dividerColor.blue,
+                              0.08,
+                            ),
                             highlightColor: Colors.transparent,
                           ),
                           child: ListView.builder(
                             itemCount: receiverService.receivers.length,
                             physics: const NeverScrollableScrollPhysics(),
                             itemBuilder: (_, e) => ListTile(
-                              hoverColor:
-                                  context.t.dividerColor.withOpacity(0.04),
+                              hoverColor: Color.fromRGBO(
+                                context.t.dividerColor.red,
+                                context.t.dividerColor.green,
+                                context.t.dividerColor.blue,
+                                0.04,
+                              ),
                               // todo text styling
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),

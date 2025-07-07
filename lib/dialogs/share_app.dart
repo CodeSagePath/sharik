@@ -52,19 +52,19 @@ class _ShareAppDialogState extends State<ShareAppDialog> {
 
   @override
   Widget build(BuildContext context) {
-    var _apps = <ApplicationWithIcon>[];
+    var apps = <ApplicationWithIcon>[];
     if (_search.isEmpty) {
-      _apps = apps;
+      apps = apps;
     } else {
       // selected = null;
       for (final el in apps) {
         if (el.packageName.toLowerCase().contains(_search) ||
             el.appName.toLowerCase().contains(_search)) {
-          _apps.add(el);
+          apps.add(el);
         }
       }
       for (final el in selected) {
-        if (!_apps.contains(el)) {
+        if (!apps.contains(el)) {
           selected.remove(el);
         }
       }
@@ -78,7 +78,11 @@ class _ShareAppDialogState extends State<ShareAppDialog> {
         width: double.maxFinite,
         child: Theme(
           data: context.t.copyWith(
-            splashColor: context.t.dividerColor.withOpacity(0.08),
+            splashColor: Color.fromRGBO(
+                context.t.dividerColor.red,
+                context.t.dividerColor.green,
+                context.t.dividerColor.blue,
+                0.08,),
             highlightColor: Colors.transparent,
           ),
           child: Column(
@@ -125,12 +129,16 @@ class _ShareAppDialogState extends State<ShareAppDialog> {
                     InputDecoration(hintText: context.l.selectAppSearch),
               ),
               const SizedBox(height: 14),
-              for (final app in _apps)
+              for (final app in apps)
                 Padding(
                   padding: const EdgeInsets.only(top: 2),
                   child: ListTile(
                     // todo colors
-                    selectedTileColor: context.t.dividerColor.withOpacity(0.08),
+                    selectedTileColor: Color.fromRGBO(
+                        context.t.dividerColor.red,
+                        context.t.dividerColor.green,
+                        context.t.dividerColor.blue,
+                        0.08,),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -170,17 +178,21 @@ class _ShareAppDialogState extends State<ShareAppDialog> {
                     selected: selected.contains(app),
                   ),
                 ),
-              if (_apps.isEmpty && _search.isEmpty)
+              if (apps.isEmpty && _search.isEmpty)
                 Center(
                   child: Container(
                     padding: const EdgeInsets.all(24),
                     child: CircularProgressIndicator(
                       valueColor: AlwaysStoppedAnimation(
-                        context.t.colorScheme.secondary.withOpacity(0.8),
+                        Color.fromRGBO(
+                            context.t.colorScheme.secondary.red,
+                            context.t.colorScheme.secondary.green,
+                            context.t.colorScheme.secondary.blue,
+                            0.8,),
                       ),
                     ),
                   ),
-                )
+                ),
             ],
           ),
         ),

@@ -69,7 +69,11 @@ class SettingsScreen extends StatelessWidget {
                 const SizedBox(height: 24),
                 Theme(
                   data: context.t.copyWith(
-                    splashColor: context.t.dividerColor.withOpacity(0.08),
+                    splashColor: Color.fromRGBO(
+                        context.t.dividerColor.red,
+                        context.t.dividerColor.green,
+                        context.t.dividerColor.blue,
+                        0.08,),
                     highlightColor: Colors.transparent,
                   ),
                   child: LayoutBuilder(
@@ -122,7 +126,8 @@ class SettingsScreen extends StatelessWidget {
         ),
         const SizedBox(height: 14),
         ListTile(
-          hoverColor: context.t.dividerColor.withOpacity(0.04),
+          hoverColor: Color.fromRGBO(context.t.dividerColor.red,
+              context.t.dividerColor.green, context.t.dividerColor.blue, 0.04,),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
@@ -141,7 +146,8 @@ class SettingsScreen extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         ListTile(
-          hoverColor: context.t.dividerColor.withOpacity(0.04),
+          hoverColor: Color.fromRGBO(context.t.dividerColor.red,
+              context.t.dividerColor.green, context.t.dividerColor.blue, 0.04,),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
@@ -177,7 +183,8 @@ class SettingsScreen extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         ListTile(
-          hoverColor: context.t.dividerColor.withOpacity(0.04),
+          hoverColor: Color.fromRGBO(context.t.dividerColor.red,
+              context.t.dividerColor.green, context.t.dividerColor.blue, 0.04,),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
@@ -225,7 +232,8 @@ class SettingsScreen extends StatelessWidget {
         ),
         const SizedBox(height: 14),
         ListTile(
-          hoverColor: context.t.dividerColor.withOpacity(0.04),
+          hoverColor: Color.fromRGBO(context.t.dividerColor.red,
+              context.t.dividerColor.green, context.t.dividerColor.blue, 0.04,),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),

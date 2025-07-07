@@ -162,7 +162,7 @@ class ShareState extends State<SharingScreen> with TickerProviderStateMixin {
                     left: false,
                     child: Container(),
                   ),
-                )
+                ),
               ],
             ),
           ),
@@ -196,15 +196,12 @@ class ShareState extends State<SharingScreen> with TickerProviderStateMixin {
               ),
               Expanded(
                 child: Scrollbar(
-                  isAlwaysShown: true,
                   controller: fileNameScroller,
                   child: SingleChildScrollView(
                     controller: fileNameScroller,
                     scrollDirection: Axis.horizontal,
                     child: Text(
-                      _file.data
-                          .toString()
-                          .replaceAll(multipleFilesDelimiter, ' '),
+                      _file.data.replaceAll(multipleFilesDelimiter, ' '),
                       style: GoogleFonts.getFont(
                         'Andika',
                         color: Colors.grey.shade50,
@@ -214,7 +211,7 @@ class ShareState extends State<SharingScreen> with TickerProviderStateMixin {
                     ),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
@@ -298,7 +295,7 @@ class ShareState extends State<SharingScreen> with TickerProviderStateMixin {
               ),
             ],
           ),
-        )
+        ),
       ],
     );
   }
@@ -342,7 +339,6 @@ class ShareState extends State<SharingScreen> with TickerProviderStateMixin {
                       const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   child: Scrollbar(
                     controller: urlScroller,
-                    isAlwaysShown: true,
                     child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       controller: urlScroller,
@@ -436,12 +432,12 @@ class ShareState extends State<SharingScreen> with TickerProviderStateMixin {
                 ),
                 const SizedBox(height: 24),
                 AnimatedSize(
-                  vsync: this,
                   duration: const Duration(milliseconds: 200),
                   child: _stateShowQr
                       ? QrImage(
                           data: displayAddress,
-                          foregroundColor: context.t.textTheme.button!.color,
+                          foregroundColor:
+                              context.t.textTheme.labelLarge!.color,
                         )
                       : const SizedBox(),
                 ),

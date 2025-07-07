@@ -191,7 +191,7 @@ class AboutScreen extends StatelessWidget {
                                   _updateService.state ==
                                       UpdateServiceState.latest)
                               ? Colors.deepPurple.shade100
-                              : Colors.deepPurple.shade100.withOpacity(0.8),
+                              : Colors.deepPurple.shade100.withAlpha(204),
 
                           // color: Colors.deepPurple.shade200,
                           borderRadius: BorderRadius.circular(8),
@@ -201,9 +201,9 @@ class AboutScreen extends StatelessWidget {
                             // splashColor: Colors.deepPurple.shade300.withOpacity(0.3),
                             // hoverColor: Colors.deepPurple.shade300.withOpacity(0.2),
                             splashColor:
-                                Colors.deepPurple.shade300.withOpacity(0.28),
+                                Colors.deepPurple.shade300.withAlpha(48),
                             hoverColor:
-                                Colors.deepPurple.shade300.withOpacity(0.14),
+                                Colors.deepPurple.shade300.withAlpha(22),
 
                             onTap: (_updateService.state ==
                                         UpdateServiceState.upgradable ||
@@ -234,7 +234,7 @@ class AboutScreen extends StatelessWidget {
                                               UpdateServiceState.latest)
                                       ? Colors.deepPurple.shade700
                                       : Colors.deepPurple.shade700
-                                          .withOpacity(0.8),
+                                          .withAlpha(128),
                                 ),
                               ),
                             ),

@@ -35,10 +35,10 @@ class PrimaryButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(roundedRadius.toDouble()),
         color: Colors.deepPurple.shade400,
         child: InkWell(
-          splashColor: Colors.deepPurple.shade300.withOpacity(0.4),
-          hoverColor: Colors.deepPurple.shade200.withOpacity(0.12),
+          splashColor: Colors.deepPurple.shade300.withAlpha(40),
+          hoverColor: Colors.deepPurple.shade200.withAlpha(12),
           highlightColor: Colors.transparent,
-          focusColor: Colors.white.withOpacity(0.2),
+          focusColor: Colors.white.withAlpha(20),
           borderRadius: BorderRadius.circular(roundedRadius.toDouble()),
           onTap: onClick,
           child: secondaryIcon != null
@@ -102,10 +102,10 @@ class DialogTextButton extends StatelessWidget {
       borderRadius: BorderRadius.circular(6),
       child: InkWell(
         borderRadius: BorderRadius.circular(6),
-        splashColor: context.t.dividerColor.withOpacity(0.08),
-        hoverColor: context.t.dividerColor.withOpacity(0.04),
+        splashColor: context.t.dividerColor.withAlpha(8),
+        hoverColor: context.t.dividerColor.withAlpha(4),
         highlightColor: Colors.transparent,
-        focusColor: Colors.white.withOpacity(0.2),
+        focusColor: Colors.white.withAlpha(20),
         onTap: onClick,
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
@@ -116,7 +116,7 @@ class DialogTextButton extends StatelessWidget {
               fontSize: 15,
               color: onClick != null
                   ? context.t.dividerColor
-                  : context.t.dividerColor.withOpacity(0.6),
+                  : context.t.dividerColor.withAlpha(60),
             ),
           ),
         ),
@@ -145,16 +145,16 @@ class TransparentButton extends StatelessWidget {
 
     switch (background) {
       case TransparentButtonBackground.def:
-        splashColor = context.t.dividerColor.withOpacity(0.08);
-        hoverColor = context.t.dividerColor.withOpacity(0.04);
+        splashColor = context.t.dividerColor.withAlpha(8);
+        hoverColor = context.t.dividerColor.withAlpha(4);
         break;
       case TransparentButtonBackground.purpleLight:
-        splashColor = Colors.deepPurple.shade300.withOpacity(0.16);
-        hoverColor = Colors.deepPurple.shade200.withOpacity(0.6);
+        splashColor = Colors.deepPurple.shade300.withAlpha(16);
+        hoverColor = Colors.deepPurple.shade200.withAlpha(60);
         break;
       case TransparentButtonBackground.purpleDark:
-        splashColor = Colors.deepPurple.shade200.withOpacity(0.2);
-        hoverColor = Colors.deepPurple.shade200.withOpacity(0.4);
+        splashColor = Colors.deepPurple.shade200.withAlpha(20);
+        hoverColor = Colors.deepPurple.shade200.withAlpha(40);
         break;
     }
 
@@ -162,7 +162,7 @@ class TransparentButton extends StatelessWidget {
       shape: RoundedRectangleBorder(
         side: BorderSide(
           color: border
-              ? Colors.deepPurple.shade100.withOpacity(0.16)
+              ? Colors.deepPurple.shade100.withAlpha(16)
               : Colors.transparent,
         ),
         borderRadius: BorderRadius.circular(8),
@@ -173,7 +173,7 @@ class TransparentButton extends StatelessWidget {
         splashColor: splashColor,
         hoverColor: hoverColor,
         highlightColor: Colors.transparent,
-        focusColor: Colors.white.withOpacity(0.2),
+        focusColor: Colors.white.withAlpha(20),
         onTap: onClick,
         child: Container(
           margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
@@ -196,10 +196,10 @@ class ListButton extends StatelessWidget {
       borderRadius: BorderRadius.circular(12),
       color: Colors.deepPurple.shade300,
       child: InkWell(
-        splashColor: Colors.deepPurple.shade100.withOpacity(0.2),
-        hoverColor: Colors.deepPurple.shade100.withOpacity(0.4),
+        splashColor: Colors.deepPurple.shade100.withAlpha(20),
+        hoverColor: Colors.deepPurple.shade100.withAlpha(40),
         highlightColor: Colors.transparent,
-        focusColor: Colors.white.withOpacity(0.2),
+        focusColor: Colors.white.withAlpha(20),
         borderRadius: BorderRadius.circular(12),
         onTap: onPressed,
         child: Padding(
