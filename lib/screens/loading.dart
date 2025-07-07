@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:ackee_dart/ackee_dart.dart';
 import 'package:flutter/foundation.dart';
@@ -76,7 +75,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
           if (sharedFile.isNotEmpty) {
             // todo apply dry
-            final _file = SharingObject(
+            final file = SharingObject(
               type: SharingObjectType.file,
               data: sharedFile[0].path.replaceFirst('file://', ''),
               name: SharingObject.getSharingName(
@@ -85,23 +84,23 @@ class _LoadingScreenState extends State<LoadingScreen> {
               ),
             );
 
-            final _history = Hive.box<SharingObject>('history').values.toList();
-            _history.removeWhere((element) => element.name == _file.name);
-            _history.insert(0, _file);
+            final history = Hive.box<SharingObject>('history').values.toList();
+            history.removeWhere((element) => element.name == file.name);
+            history.insert(0, file);
             await Hive.box<SharingObject>('history').clear();
-            await Hive.box<SharingObject>('history').addAll(_history);
+            await Hive.box<SharingObject>('history').addAll(history);
 
             SharikRouter.navigateTo(
               _globalKey,
               Screens.sharing,
               RouteDirection.right,
-              _file,
+              file,
             );
             return;
           }
 
           if (sharedText != null) {
-            final _file = SharingObject(
+            final file = SharingObject(
               type: SharingObjectType.text,
               data: sharedText,
               name: SharingObject.getSharingName(
@@ -110,17 +109,17 @@ class _LoadingScreenState extends State<LoadingScreen> {
               ),
             );
 
-            final _history = Hive.box<SharingObject>('history').values.toList();
-            _history.removeWhere((element) => element.name == _file.name);
-            _history.insert(0, _file);
+            final history = Hive.box<SharingObject>('history').values.toList();
+            history.removeWhere((element) => element.name == file.name);
+            history.insert(0, file);
             await Hive.box<SharingObject>('history').clear();
-            await Hive.box<SharingObject>('history').addAll(_history);
+            await Hive.box<SharingObject>('history').addAll(history);
 
             SharikRouter.navigateTo(
               _globalKey,
               Screens.sharing,
               RouteDirection.right,
-              _file,
+              file,
             );
             return;
           }

@@ -120,7 +120,7 @@ class MaterialInkSplash extends InteractiveInkFeature {
   /// When the splash is removed, `onRemoved` will be called.
   MaterialInkSplash({
     required MaterialInkController controller,
-    required RenderBox referenceBox,
+    required super.referenceBox,
     required TextDirection textDirection,
     required Color color,
     Offset? position,
@@ -129,7 +129,7 @@ class MaterialInkSplash extends InteractiveInkFeature {
     BorderRadius? borderRadius,
     ShapeBorder? customBorder,
     double? radius,
-    VoidCallback? onRemoved,
+    super.onRemoved,
   })  : _position = position,
         _borderRadius = borderRadius ?? BorderRadius.zero,
         _customBorder = customBorder,
@@ -146,9 +146,7 @@ class MaterialInkSplash extends InteractiveInkFeature {
         _textDirection = textDirection,
         super(
           controller: controller,
-          referenceBox: referenceBox,
           color: color,
-          onRemoved: onRemoved,
         ) {
     _radiusController = AnimationController(
       duration: _kUnconfirmedSplashDuration,
@@ -268,10 +266,10 @@ class MaterialInkSplash extends InteractiveInkFeature {
       canvas.translate(originOffset.dx, originOffset.dy);
     }
     if (_clipCallback != null) {
-      final rect = _clipCallback!();
+      final rect = _clipCallback();
       if (_customBorder != null) {
         canvas.clipPath(
-          _customBorder!.getOuterPath(rect, textDirection: _textDirection),
+          _customBorder.getOuterPath(rect, textDirection: _textDirection),
         );
       } else if (_borderRadius != BorderRadius.zero) {
         canvas.clipRRect(

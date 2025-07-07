@@ -111,20 +111,26 @@ class LanguageButton extends StatelessWidget {
   const LanguageButton(this._language, this._onClick);
 
   @override
-  Widget build(BuildContext context) => PrimaryButton(
-        height: 80,
-        onClick: _onClick,
-        text: _language.nameLocal,
-        secondaryIcon: Opacity(
-          opacity: 0.4,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: SvgPicture.asset(
-              'assets/flags_gen/${_language.localizations.s_flag}.svg',
-              height: 50,
-            ),
+  Widget build(BuildContext context) {
+    // You may need to map locale to flag asset if not available in l10n
+    final flagAsset = 'assets/flags_gen/${_language.locale.languageCode}.svg';
+    // If you have a mapping, use it here
+    // Example: if (_language.locale.languageCode == 'en') flagAsset = ...
+    return PrimaryButton(
+      height: 80,
+      onClick: _onClick,
+      text: _language.nameLocal,
+      secondaryIcon: Opacity(
+        opacity: 0.4,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(8),
+          child: SvgPicture.asset(
+            flagAsset,
+            height: 50,
           ),
         ),
-        font: _language.localizations.fontAndika,
-      );
+      ),
+      font: 'Andika', // Or use a mapping if needed
+    );
+  }
 }
