@@ -63,7 +63,7 @@ class SharikRouter extends PageRouteBuilder {
                   ),
                 ),
                 child: child,
-              )
+              ),
             ],
           ),
         );

@@ -24,7 +24,7 @@ class SharikLogo extends StatelessWidget {
                 fontSize: 36,
                 fontWeight: FontWeight.w500,
               ),
-            )
+            ),
           ],
         ),
       );
