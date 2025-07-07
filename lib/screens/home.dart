@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hive/hive.dart';
@@ -208,7 +207,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-            Container(
+            ColoredBox(
               color: Colors.deepPurple.shade100,
               child: SafeArea(
                 top: false,
@@ -216,7 +215,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 left: false,
                 child: Container(),
               ),
-            )
+            ),
           ],
         ),
       ),
@@ -254,7 +253,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 _saveLatest();
               },
               TransparentButtonBackground.purpleDark,
-            )
+            ),
           ],
         ),
       );
@@ -275,10 +274,10 @@ class _HomeScreenState extends State<HomeScreen> {
             }
           },
           text: c.l.homeSend,
-          secondaryIcon: Icon(
+          secondaryIcon: const Icon(
             LucideIcons.upload,
             size: 42,
-            color: Colors.deepPurple.shade200.withOpacity(0.8),
+            color: Color.fromRGBO(221, 214, 254, 0.8),
           ),
         ),
         const SizedBox(height: 12),
@@ -288,7 +287,7 @@ class _HomeScreenState extends State<HomeScreen> {
             openDialog(context, ReceiverDialog());
           },
           text: c.l.homeReceive,
-        )
+        ),
       ],
     );
   }
@@ -322,7 +321,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   maxLines: 1,
                 ),
               ),
-            )
+            ),
           ],
         ),
         () => _shareFile(f),

@@ -42,15 +42,14 @@ class ReceiverService extends ChangeNotifier {
     }
   }
 
-  static Future<List<Receiver>> _run(String _ip) async {
-    final _ = _ip.split('.');
+  static Future<List<Receiver>> _run(String ip) async {
+    final _ = ip.split('.');
     final thisDevice = int.parse(_.removeLast());
 
-    final ip = _.join('.');
-
+    final baseIp = _.join('.');
     final devices = [
-      for (var e in List.generate(254, (index) => index + 1))
-        if (e != thisDevice) '$ip.$e'
+      for (final e in List.generate(254, (index) => index + 1))
+        if (e != thisDevice) '$baseIp.$e',
     ];
 
     final futuresPing = <NetworkAddr, Future<bool>>{};

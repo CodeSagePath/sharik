@@ -25,7 +25,6 @@ class IntroScreen extends StatelessWidget {
             Screens.home,
             RouteDirection.right,
           );
-
         },
         child: Scaffold(
           body: IntroSlider(
@@ -36,7 +35,7 @@ class IntroScreen extends StatelessWidget {
             colorActiveDot: Colors.white,
             // todo check border radius compared to the bottom bar
             doneButtonStyle: ButtonStyle(
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+              shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
