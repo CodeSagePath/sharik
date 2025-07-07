@@ -163,7 +163,7 @@ class SharingService extends ChangeNotifier {
       // We are sharing multiple files
       // Serving an entry html page or the folder page
       if (requestedFilePath.isEmpty || isDir) {
-        final _fileList = isDir
+        final fileList0 = isDir
             ? Directory(requestedFilePath)
                 .listSync()
                 .map((e) => e.path)
@@ -171,7 +171,7 @@ class SharingService extends ChangeNotifier {
             : fileList;
 
         final displayFiles = Map.fromEntries(
-          _fileList.map(
+          fileList0.map(
             (e) => MapEntry(
               e,
               FileSystemEntity.typeSync(e) != FileSystemEntityType.directory,

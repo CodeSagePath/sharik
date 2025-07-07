@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:hive/hive.dart';
 
 import '../gen/languages.dart';
@@ -10,13 +9,11 @@ class Language {
   final Locale locale;
   final String? contributorName;
   final String? contributorLink;
-  final AppLocalizations localizations;
 
   const Language({
     required this.name,
     required this.nameLocal,
     required this.locale,
-    required this.localizations,
     this.contributorName,
     this.contributorLink,
   });
@@ -50,8 +47,8 @@ class LanguageManager extends ChangeNotifier {
       return;
     }
 
-    final locales = WidgetsBinding.instance!.window.locales;
-    locales.insert(0, WidgetsBinding.instance!.window.locale);
+    final locales = WidgetsBinding.instance.platformDispatcher.locales;
+    locales.insert(0, WidgetsBinding.instance.platformDispatcher.locale);
 
     for (final locale in locales) {
       final language =

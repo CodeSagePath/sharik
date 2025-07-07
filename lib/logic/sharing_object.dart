@@ -69,7 +69,7 @@ class SharingObject {
         'dart',
         'xml',
         'yaml',
-        'toml'
+        'toml',
       ]: BootstrapIcons.file_code,
       ['diff']: BootstrapIcons.file_diff,
       // https://support.microsoft.com/en-us/office/file-formats-that-are-supported-in-excel-0943ff2c-6014-4e8d-aaea-b83d51d46247
@@ -83,7 +83,7 @@ class SharingObject {
         'xlt',
         'xla',
         'xlw',
-        'xlam'
+        'xlam',
       ]: BootstrapIcons.file_excel,
       // https://fileinfo.com/filetypes/font#:~:text=Font%20Files&text=Most%20modern%20fonts%20are%20stored,TTF%2C%20and%20.
       ['jfproj', 'woff', 'ttf', 'otf']: BootstrapIcons.file_font,
@@ -97,7 +97,7 @@ class SharingObject {
       ['xps', 'odp']: BootstrapIcons.file_slides,
       ['csv']: BootstrapIcons.file_spreadsheet,
       ['doc', 'docm', 'docx', 'rtf']: BootstrapIcons.file_word,
-      ['zip', 'rar', '7z', 'tar', 'xf']: BootstrapIcons.file_zip
+      ['zip', 'rar', '7z', 'tar', 'xf']: BootstrapIcons.file_zip,
     };
 
     final fileExtension = name.toLowerCase().split('.').last;
@@ -126,7 +126,8 @@ class SharingObject {
         throw Exception('when type is app, name is necessary');
       case SharingObjectType.unknown:
         throw Exception(
-            'Unknown type is reserved only for backwards compatability');
+          'Unknown type is reserved only for backwards compatability',
+        );
     }
   }
 }
