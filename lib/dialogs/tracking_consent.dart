@@ -7,7 +7,7 @@ import '../components/buttons.dart';
 import '../utils/helper.dart';
 
 class TrackingConsentDialog extends StatefulWidget {
-  const TrackingConsentDialog({Key? key}) : super(key: key);
+  const TrackingConsentDialog({super.key});
 
   @override
   _TrackingConsentDialogState createState() => _TrackingConsentDialogState();

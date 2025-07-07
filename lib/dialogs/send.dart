@@ -15,7 +15,7 @@ import 'share_app.dart';
 import 'share_text.dart';
 
 class SendDialog extends StatelessWidget {
-  const SendDialog({Key? key}) : super(key: key);
+  const SendDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
